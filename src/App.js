@@ -15,6 +15,14 @@ class App extends Component {
     this.setState({ cart: [...this.state.cart, id]})
   }
 
+  handleRemoveFromCart = (id) => {
+    const { cart } = this.state
+    const index = cart.indexOf(id)
+    this.setState({
+      cart: [ ...cart.slice(0, index), ...cart.slice(index + 1)]
+    })
+  }
+
   // count ids in cart, return {id: count, id: count}
   CountCartItems = (cart) => cart.reduce(( itemsCount, id) => {
     itemsCount[id] = itemsCount[id] || 0
@@ -49,6 +57,7 @@ class App extends Component {
              <CartPage 
              items={cartItems}
              onAddToCart={this.handleAddToCart} 
+             onRemoveFromCart={this.handleRemoveFromCart}
              />
           )} />
         </div>

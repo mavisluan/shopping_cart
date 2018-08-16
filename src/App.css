@@ -54,3 +54,22 @@
   width: 100px;
   font-size: 14px;
 }
+
+.cart-button {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.cart-button span {
+  font-size: 22px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid lightgray;
+}
+
+.cart-button button {
+  width: 25px;
+  height: 25px;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { items } from './static-data'
-
+import ItemsPage from './ItemsPage'
 import './App.css';
 
 class App extends Component {
@@ -12,8 +12,7 @@ class App extends Component {
           <span>Cart</span>
         </div>
         <div className='board'>
-          ItemsPage
-          CartPage
+          <ItemsPage items={items}/>
         </div>
       </div>
     );

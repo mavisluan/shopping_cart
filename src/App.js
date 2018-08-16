@@ -46,7 +46,10 @@ class App extends Component {
               onAddToCart={this.handleAddToCart}/>
           )} />
           <Route path='/cart' render={() => (
-             <CartPage items={cartItems} />
+             <CartPage 
+             items={cartItems}
+             onAddToCart={this.handleAddToCart} 
+             />
           )} />
         </div>
       </div>

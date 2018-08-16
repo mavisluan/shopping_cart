@@ -1,7 +1,7 @@
 import React from 'react'
 import Item from './Item'
 
-const CartPage = ({items}) => (
+const CartPage = ({items, onAddToCart}) => (
     <div className='cart'>
         {items.map(item => (
             <div key={item.id}>
@@ -9,7 +9,7 @@ const CartPage = ({items}) => (
                     <div className='cart-button'>
                         <button><i class="fas fa-minus"></i></button>
                         <span>{item.count}</span>
-                        <button><i className="fas fa-plus"></i></button>
+                        <button onClick={()=> onAddToCart(item.id)}><i className="fas fa-plus"></i></button>
                     </div>
                 </Item>
             </div>

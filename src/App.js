@@ -44,8 +44,8 @@ class App extends Component {
     return (
       <div className='app'>
         <div className='nav'>
-          <span><Link to='/'>Items</Link></span>
-          <span><Link to='/cart'>Cart</Link></span> 
+          <Link to='/'><span>Items</span></Link>
+          <Link to='/cart'><span>Cart</span></Link>
         </div>
         <div className='board'>
           <Route exact path='/' render={()=> (

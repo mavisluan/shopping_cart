@@ -4,12 +4,22 @@
 
 .nav {
   padding-bottom: 10px;
-  border-bottom: 2px solid darkblue
+  border-bottom: 2px solid darkblue;
+  
 }
 
-.nav span {
+.nav a {
+  text-decoration: none;
   font-size: 26px;
-  padding-right: 20px;
+  padding-right: 20px
+}
+
+.nav a:hover {
+  color: darkgray;
+}
+
+.nav span.selected {
+ border-bottom: 3px solid orange
 }
 
 .board {
@@ -29,24 +39,21 @@
 }
 
 .item-image {
-  flex: 1;
   margin-right: 20px;
 }
 
 .item-info {
-  flex: 10
+  flex: 1
 }
-
 
 .item span {
   display: block;
   margin-bottom: 10px;
 }
 
-.item-price {
-  flex: 1;
+.item-price > div {
+  padding-top: 5px;
 }
-
 .items button {
   border: 2px solid orange;
   border-radius: 5px;

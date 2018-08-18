@@ -1,5 +1,6 @@
 import React from 'react'
 import Item from './Item'
+import TotalCost from './TotalCost'
 
 const CartPage = ({items, onAddToCart, onRemoveFromCart}) => (
     <div className='cart'>
@@ -14,6 +15,9 @@ const CartPage = ({items, onAddToCart, onRemoveFromCart}) => (
                 </Item>
             </div>
         ))}
+        <div>
+            <TotalCost items={items} />
+        </div>
     </div>
 )
 

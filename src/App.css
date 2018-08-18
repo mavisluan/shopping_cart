@@ -47,6 +47,12 @@
   margin-bottom: 10px;
 }
 
+.item-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end
+}
+
 .item-price > div {
   padding-top: 5px;
 }
@@ -77,4 +83,17 @@
 .cart-button button {
   width: 28px;
   height: 28px;
+}
+
+.total-cost {
+  font-size: 24px;
+  position: absolute;
+  right: 40px;
+}
+
+.empty-message {
+  font-size: 30px;
+  color: darkgray;
+  text-align: center;
+  padding-top: 10px;
 }

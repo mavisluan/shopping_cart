@@ -29,9 +29,10 @@ class App extends Component {
     itemsCount[id] ++
     return itemsCount
     }, { })
-    
+  
 
   render() {
+
     const itemsCount= this.CountCartItems(this.state.cart)
     // find the item by id 
     // add count property to item {id: num, name:'', count: num}
@@ -40,12 +41,27 @@ class App extends Component {
       const cartItem = items.find(item => item.id === parseInt(id, 10))
       return { ...cartItem, count: itemsCount[id]}
     })
+
+    //totalCount 
+    const totalCount = cartItems.reduce((total, item) => (
+      total += item.count
+    ), 0)
     
+    //totalCost
+    const totalCost =  cartItems.reduce((total, item) => (
+      total += item.price * item.count
+    ), 0)
+
     return (
       <div className='app'>
         <div className='nav'>
           <Link to='/'><span>Items</span></Link>
           <Link to='/cart'><span>Cart</span></Link>
+          <span className='cart-status'>
+            <Link to='/cart'>
+              <i className="fas fa-shopping-cart"></i> {totalCount} items (${totalCost})
+            </Link>
+          </span>
         </div>
         <div className='board'>
           <Route exact path='/' render={()=> (
@@ -58,6 +74,7 @@ class App extends Component {
              items={cartItems}
              onAddToCart={this.handleAddToCart} 
              onRemoveFromCart={this.handleRemoveFromCart}
+             totalCost={totalCost}
              />
           )} />
         </div>

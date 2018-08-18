@@ -1,8 +1,7 @@
 import React from 'react'
 import Item from './Item'
-import TotalCost from './TotalCost'
 
-const CartPage = ({items, onAddToCart, onRemoveFromCart}) => (
+const CartPage = ({items, onAddToCart, onRemoveFromCart, totalCost}) => (
     <div className='cart'>
         {items.map(item => (
             <div key={item.id}>
@@ -15,9 +14,19 @@ const CartPage = ({items, onAddToCart, onRemoveFromCart}) => (
                 </Item>
             </div>
         ))}
-        <div>
-            <TotalCost items={items} />
-        </div>
+        <div className='cart-status'>
+        {items.length === 0 ? 
+            <div className='empty-message'>
+                Your cart is empty. 
+                <br/>
+                Why not add some product to it?
+            </div> 
+            : 
+            <div className='total-cost'>
+            Total: ${totalCost}
+            </div>
+        }
+        </div>    
     </div>
 )
 

@@ -5,7 +5,6 @@
 .nav {
   padding-bottom: 10px;
   border-bottom: 2px solid darkblue;
-  
 }
 
 .nav a {
@@ -18,13 +17,17 @@
   color: darkgray;
 }
 
+.cart-status a {
+  font-size: 18px;
+  color: gray;
+  float: right;
+}
+
 .board {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
 }
-
-
 
 .item {
   display: flex;

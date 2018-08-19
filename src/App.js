@@ -9,8 +9,10 @@ class App extends Component {
   state = {
     // to collect ids of the items in the cart
     cart: [],
+    activeTab: 0
   }
 
+  handleTab = (index) => this.setState({ activeTab: index})
   handleAddToCart = (id) => {
     this.setState({ cart: [...this.state.cart, id]})
   }
@@ -24,7 +26,7 @@ class App extends Component {
   }
 
   // count ids in cart, return {id: count, id: count}
-  CountCartItems = (cart) => cart.reduce(( itemsCount, id) => {
+  countCartItems = (cart) => cart.reduce(( itemsCount, id) => {
     itemsCount[id] = itemsCount[id] || 0
     itemsCount[id] ++
     return itemsCount
@@ -33,7 +35,7 @@ class App extends Component {
 
   render() {
 
-    const itemsCount= this.CountCartItems(this.state.cart)
+    const itemsCount= this.countCartItems(this.state.cart)
     // find the item by id 
     // add count property to item {id: num, name:'', count: num}
     // put the item object into the cartItems array
@@ -55,8 +57,8 @@ class App extends Component {
     return (
       <div className='app'>
         <div className='nav'>
-          <Link to='/'><span>Items</span></Link>
-          <Link to='/cart'><span>Cart</span></Link>
+          <Link to='/'><span className={`${this.state.activeTab === 0 && 'selected'}`}>Items</span></Link>
+          <Link to='/cart'><span onClick={()=>this.handleTab(1)} className={`${this.state.activeTab === 1 && 'selected'}`}>Cart</span></Link>
           <span className='cart-status'>
             <Link to='/cart'>
               <i className="fas fa-shopping-cart"></i> {totalCount} items (${totalCost})

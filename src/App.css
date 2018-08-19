@@ -17,6 +17,9 @@
   color: darkgray;
 }
 
+.nav span.selected {
+  border-bottom: 4px solid orange
+}
 .cart-status a {
   font-size: 18px;
   color: gray;

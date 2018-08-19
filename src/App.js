@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { items } from './static-data'
 import ItemsPage from './ItemsPage'
 import CartPage from './CartPage'
-import { Route, Link } from 'react-router-dom'
+import Navigation from './Navigation'
+import { Route } from 'react-router-dom'
 import './App.css';
 
 class App extends Component {
@@ -57,13 +58,7 @@ class App extends Component {
     return (
       <div className='app'>
         <div className='nav'>
-          <Link to='/'><span className={`${this.state.activeTab === 0 && 'selected'}`}>Items</span></Link>
-          <Link to='/cart'><span onClick={()=>this.handleTab(1)} className={`${this.state.activeTab === 1 && 'selected'}`}>Cart</span></Link>
-          <span className='cart-status'>
-            <Link to='/cart'>
-              <i className="fas fa-shopping-cart"></i> {totalCount} items (${totalCost})
-            </Link>
-          </span>
+          <Navigation totalCount={totalCount} totalCost={totalCost} handleTab={this.handleTab} activeTab={this.state.activeTab}/> 
         </div>
         <div className='board'>
           <Route exact path='/' render={()=> (

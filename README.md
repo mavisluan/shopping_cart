@@ -1,9 +1,9 @@
-## Shopping cart Project
+# Shopping cart Project
 
 - This is a shopping cart web app for users to browse items and shop. 
 
 
-## App functions
+# App functions
 
 Users will be able to 
 
@@ -14,13 +14,18 @@ Users will be able to
 - switch between two pages with the navigation bar. 
 
 
-## Project Screenshot 
+# Project Screenshot 
+
+## ItemsPage
 
 ![](src/icons/items-page.png )
+
+## CartPage
+
 ![](src/icons/cart-page.png )
 
 
-## Instructions for installment
+# Instructions for installment
 
 - clone my repo git clone https://github.com/mavisluan/shopping_cart.git
 - install all project dependencies with yarn install

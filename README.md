@@ -8,9 +8,9 @@ It is a shopping cart web app for users to browse items and shop.
 
 Users will be able to 
 
-- see all items on the main (Item) page. 
-- choose items and put them into the shopping cart.
-- see quantities and total cost of the items in cart on both the main page and Cart Page.
+- see all items on the ItemsPage. 
+- choose items to put into the shopping cart.
+- see quantities and total cost of the items in cart on both pages.
 - modify the quantities of items on Cart page.
 - switch between two pages with the navigation bar. 
 

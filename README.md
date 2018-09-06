@@ -1,9 +1,10 @@
 # Shopping cart Project
 
-- This is a shopping cart web app for users to browse items and shop. 
+- The project is built with ReactJS.
+- It is a shopping cart web app for users to browse items and shop. 
 
 
-# App functions
+# App Functionalty
 
 Users will be able to 
 
@@ -25,7 +26,7 @@ Users will be able to
 ![](src/icons/cart-page.png )
 
 
-# Instructions for installment
+# Installation Instructions
 
 - clone my repo git clone https://github.com/mavisluan/shopping_cart.git
 - install all project dependencies with yarn install

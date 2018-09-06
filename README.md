@@ -1,7 +1,7 @@
 # Shopping cart Project
 
-- The project is built with ReactJS.
-- It is a shopping cart web app for users to browse items and shop. 
+The project is built with ReactJS.
+It is a shopping cart web app for users to browse items and shop. 
 
 
 # App Functionalty

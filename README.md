@@ -1,6 +1,6 @@
 # Shopping cart Project
 
-- The project is built with ReactJS.
+- The project is built with ReactJS and Redux.
 - It is a shopping cart web app for users to browse items and shop. 
 
 

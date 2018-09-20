@@ -27,7 +27,7 @@ Users will be able to
 # Installation Instructions
 
 - git clone https://github.com/mavisluan/shopping_cart.git
-- yarn install
 - cd shopping_cart
+- yarn install
 - yarn start
 

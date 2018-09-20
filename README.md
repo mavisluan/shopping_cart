@@ -18,17 +18,16 @@ Users will be able to
 # Project Screenshot 
 
 ## ItemsPage
-
-![](src/icons/items-page.png )
+<img src='src/icons/items-page.png' width='600'>
 
 ## CartPage
-
-![](src/icons/cart-page.png )
+<img src='src/icons/cart-page.png' width='600'>
 
 
 # Installation Instructions
 
-- clone my repo git clone https://github.com/mavisluan/shopping_cart.git
-- install all project dependencies with yarn install
-- start the development server with yarn start
+- git clone https://github.com/mavisluan/shopping_cart.git
+- yarn install
+- cd shopping_cart
+- yarn start
 

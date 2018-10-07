@@ -4,7 +4,7 @@
 - It is a shopping cart web app for users to browse items and shop. 
 
 
-# App Functionalty
+## App Functionalty
 
 Users will be able to 
 
@@ -15,16 +15,16 @@ Users will be able to
 - switch between two pages with the navigation bar. 
 
 
-# Project Screenshot 
+## Project Screenshot 
 
-## ItemsPage
+### ItemsPage
 <img src='src/icons/items-page.png' width='600'>
 
-## CartPage
+### CartPage
 <img src='src/icons/cart-page.png' width='600'>
 
 
-# Installation Instructions
+## Installation Instructions
 
 - git clone https://github.com/mavisluan/shopping_cart.git
 - cd shopping_cart
